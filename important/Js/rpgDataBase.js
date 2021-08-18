@@ -6,4 +6,6 @@ var potion = {
     size: ["Small", "Medium", "Large"],
 };
 
+var enemy = {};
+
 console.log(potion.variant[0]);

@@ -1,11 +1,11 @@
 var potion = {
-    type: "Item",
     name: "Potion",
+    type: "Item",
     variant: ["Health", "Mana", "Stamina"],
-    anti_variant: ["Anti-Health", "Anti-Mana", "Anti-Stamina"],
+    antiVariant: ["Anti-Health", "Anti-Mana", "Anti-Stamina"],
     size: ["Small", "Medium", "Large"],
 };
 
 var enemy = {};
 
-console.log(potion.variant[0]);
+console.log(potion.name);

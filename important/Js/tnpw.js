@@ -9,16 +9,33 @@
 // }
 // console.log(tnpw(1));
 
-function tnpw(n) {
-    var hasil = [n];
-    if (n === 1) return hasil.push(n);
-    else if (n > 1 && n % 2 === 0) {
-        hasil.push(tnpw(n / 2));
-        return tnpw(n / 2);
-    } else if (n > 1 && n % 2 !== 0) {
-        hasil.push(3 * n + 1);
-        return tnpw(3 * n + 1);
-    }
-    return hasil;
-}
-console.log(tnpw(1));
+// function tnpw(n) {
+//     var hasil = [];
+//     if (n === 1) {
+//         hasil.push(n);
+//         return hasil;
+//     } else if (n % 2 === 0) {
+//         var hasilBagi2 = [n, n / 2];
+//         hasil.push(hasilBagi2);
+//         return hasil.push(tnpw(n / 2));
+//     } else if (n % 2 !== 0) {
+//         var hasil3NP1 = [n, 3 * n + 1];
+//         return hasil.push(tnpw(3 * n + 1));
+//     }
+// }
+// console.log(tnpw(1));
+
+// function tnpw(n) {
+//     var hasil = [];
+//     if (n === 1) {
+//         hasil.push(n);
+//         return hasil;
+//     } else if (n % 2 === 0) {
+//         hasil.push(tnpw(n / 2));
+//         return hasil;
+//     } else if (n % 2 !== 0) {
+//         hasil.push(tnpw(3 * n + 1));
+//         return hasil;
+//     }
+// }
+// console.log(tnpw(2));

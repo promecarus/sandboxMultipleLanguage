@@ -314,17 +314,17 @@
 // console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide"));
 
 function fungsi(a, b) {
-    return a ** 3 + b ** 3;
+  return a ** 3 + b ** 3;
 }
 
 console.log(fungsi(8, 3) + fungsi(8, 3));
 
 function tambahUniversal() {
-    var hasil = 0;
-    for (let i = 0; i < arguments.length; i++) {
-        hasil += arguments[i];
-    }
-    return hasil;
+  var hasil = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    hasil += arguments[i];
+  }
+  return hasil;
 }
 
 console.log(tambahUniversal(1, 3, 6));

@@ -15,6 +15,6 @@ int main(){
 //	cout<<"Sekarang, nilai A adalah "<<b<<" dan nilai B adalah "<<a;
 //	-----
 	int a = 0;
-	a++;
+	a++,a++;
 	cout<<a;	
 }

@@ -9,4 +9,5 @@ int main(){
 	bool benar = true;
 	cout<<nama<<angkaPas<<angkaKoma<<angkaKomaJuga<<benar<<endl;
 	cout<<nama<<angkaPas<<angkaKoma<<angkaKomaJuga<<benar<<endl;
+	cin.get();
 }

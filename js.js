@@ -313,18 +313,21 @@
 // updateRecords(recordCollection, 2548, "tracks", "");
 // console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide"));
 
-function fungsi(a, b) {
-  return a ** 3 + b ** 3;
-}
+// function fungsi(a, b) {
+//   return a ** 3 + b ** 3;
+// }
 
-console.log(fungsi(8, 3) + fungsi(8, 3));
+// console.log(fungsi(8, 3) + fungsi(8, 3));
 
-function tambahUniversal() {
-  var hasil = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    hasil += arguments[i];
-  }
-  return hasil;
-}
+// function tambahUniversal() {
+//   var hasil = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     hasil += arguments[i];
+//   }
+//   return hasil;
+// }
 
-console.log(tambahUniversal(1, 3, 6));
+// console.log(tambahUniversal(1, 3, 6));
+
+let a = 10;
+console.log(a == 10 ? "sepuluh" : "bukan sepuluh");

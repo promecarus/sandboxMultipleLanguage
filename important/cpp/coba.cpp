@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main(){
@@ -14,8 +15,9 @@ int main(){
 //	cout<<"-----";
 //	cout<<"Sekarang, nilai A adalah "<<b<<" dan nilai B adalah "<<a;
 //	-----
-	int a = 0;
-	a++,a++, a++;
-	cout<<a<<a;
-	cin.get();
+	int a = 1;
+	float b = sin(a);
+	cout<<a<<b<<endl;
+	system ("pause");
+	return 0;
 }

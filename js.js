@@ -329,5 +329,36 @@
 
 // console.log(tambahUniversal(1, 3, 6));
 
-let a = 10;
-console.log(a == 10 ? "sepuluh" : "bukan sepuluh");
+// let a = 10;
+// console.log(a == 10 ? "sepuluh" : "bukan sepuluh");
+
+// function list(names) {
+//   let hasil = "";
+//   if (names.length == 1) {
+//     hasil += names[0]["name"];
+//   } else {
+//     for (let i = 0; i < names.length; i++) {
+//       if (i == names.length - 1) {
+//         hasil += `& ${names[i]["name"]}`;
+//       } else if (i == names.length - 2) {
+//         hasil += `${names[i]["name"]} `;
+//       } else {
+//         hasil += `${names[i]["name"]}, `;
+//       }
+//     }
+//   }
+//   return hasil;
+// }
+
+// console.log(list([{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }]));
+
+// function multiply(a, b){
+//     let ia = parseFloat(a), ib = parseFloat(b);
+//     return (ia * ib).toString();
+// }
+
+// console.log(multiply("10", "9"));
+
+function findChildren(dancingBrigade) {
+  return dancingBrigade.split("").sort().join("");
+}

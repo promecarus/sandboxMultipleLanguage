@@ -4,20 +4,16 @@ using namespace std;
 
 int main(){
 //	int a,b;
-//	cout<<"Masukkan nilai A: ";
+//	cout<<"Masukkan nilai a:";
 //	cin>>a;
-//	cout<<"Masukkan nilai B: ";
+//	cout<<"Masukkan nilai b:";
 //	cin>>b;
-//	cout<<"Sekarang, nilai A adalah "<<b<<" dan nilai B adalah "<<a;
-//	-----
-//	int a = 10, b = 20;
-//	cout<<"nilai A adalah "<<a<<" dan nilai B adalah "<<b;
-//	cout<<"-----";
-//	cout<<"Sekarang, nilai A adalah "<<b<<" dan nilai B adalah "<<a;
-//	-----
+//	cout<<"Hasil penambahan "<<a<<" dan "<<b<<" adalah "<<a+b<<endl;
+//	cout<<"Hasil perkalian "<<a<<" dan "<<b<<" adalah "<<a*b<<endl;
 	int a = 1;
-	float b = sin(a);
-	cout<<a<<b<<endl;
+	a++;
+	a+=5;
+	cout<<a<<endl;
 	system ("pause");
 	return 0;
 }

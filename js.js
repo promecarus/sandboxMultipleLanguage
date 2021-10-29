@@ -359,6 +359,10 @@
 
 // console.log(multiply("10", "9"));
 
-function findChildren(dancingBrigade) {
-  return dancingBrigade.split("").sort().join("");
-}
+// function findChildren(dancingBrigade) {
+//   return dancingBrigade.split("").sort().join("");
+// }
+
+var a = "aiuzacssasacaskfjhz";
+
+console.log([...new Set(a)].sort().join(""));

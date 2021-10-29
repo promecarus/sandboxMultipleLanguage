@@ -57,6 +57,25 @@
 
 # T = [1,2,3,4,2,6]
 # print(T.index(1))
-a = 1
-a+=1
-print(a)
+# a = 1
+# a+=1
+# print(a)
+
+x = 10
+y = 1
+z = 100
+
+i = 1
+j = 1
+
+while ((x*i)+(y*j))<=z:
+    if ((i)*(y*j)<z):
+        i+=1
+    else:
+        j+=1
+
+if (((x*i)+(y*j))==z):
+    print(i)
+    print(j)
+else:
+    print("tidak mungkin")

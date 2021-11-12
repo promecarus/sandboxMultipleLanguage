@@ -363,6 +363,12 @@
 //   return dancingBrigade.split("").sort().join("");
 // }
 
-var a = "aiuzacssasacaskfjhz";
+// var a = "aiuzacssasacaskfjhz";
 
-console.log([...new Set(a)].sort().join(""));
+// console.log([...new Set(a)].sort().join(""));
+
+// let a = ["halo", "hai", "hello", "halo"];
+// a[0] += "j"
+// console.log(a);
+// a[4] = 'a';
+// console.log(a);

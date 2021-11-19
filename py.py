@@ -61,21 +61,39 @@
 # a+=1
 # print(a)
 
-x = 10
-y = 1
-z = 100
+# x = 10
+# y = 1
+# z = 100
 
-i = 1
-j = 1
+# i = 1
+# j = 1
 
-while ((x*i)+(y*j))<=z:
-    if ((i)*(y*j)<z):
-        i+=1
-    else:
-        j+=1
+# while ((x*i)+(y*j))<=z:
+#     if ((i)*(y*j)<z):
+#         i+=1
+#     else:
+#         j+=1
 
-if (((x*i)+(y*j))==z):
-    print(i)
-    print(j)
-else:
-    print("tidak mungkin")
+# if (((x*i)+(y*j))==z):
+#     print(i)
+#     print(j)
+# else:
+#     print("tidak mungkin")
+
+BanyakKata = int(input("Banyak kata: "))
+PanjangKata = int(input("Panjang kata: "))
+unique = []
+for i in range (BanyakKata):
+    for j in range (PanjangKata):
+        MasukkanKataKe = input("Masukkan kata ke-" + str(i+1) + ": ")
+        if MasukkanKataKe not in unique:
+            unique.append(MasukkanKataKe)
+        else:
+            print("Kata sudah ada")
+            break
+
+        if MasukkanKataKe[j] == MasukkanKataKe[j+1]:
+            
+
+
+print(hasil)    

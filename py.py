@@ -90,10 +90,4 @@ for i in range (BanyakKata):
             unique.append(MasukkanKataKe)
         else:
             print("Kata sudah ada")
-            break
-
-        if MasukkanKataKe[j] == MasukkanKataKe[j+1]:
-            
-
-
-print(hasil)    
+            break  

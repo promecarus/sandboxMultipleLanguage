@@ -9,11 +9,11 @@ int pangkat2(int x){
 int main(){
 	int Bilangan, Hasil;
 	
-	cout << "Masukkan bilangan: ";
+	cout << "Masukkan bilangan\t: ";
 	cin >> Bilangan;
 	
 	Hasil = pangkat2(Bilangan);
-	cout << "Pangkat dua dari " << Bilangan << ""
+	cout << "Pangkat dua dari " << Bilangan << "\t: " << Hasil << endl;
 	
 	system("pause");
 	return 0;

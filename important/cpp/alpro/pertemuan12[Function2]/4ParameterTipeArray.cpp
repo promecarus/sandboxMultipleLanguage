@@ -6,7 +6,6 @@ void IsiArray(int A[], int N){
 		cout << "Masukkan elemen ke-" << i + 1 << ": ";
 		cin >> A[i];
 	}
-	
 }
 
 int main(){

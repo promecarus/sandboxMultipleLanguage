@@ -8,8 +8,7 @@ void increment(int *X){
 int main(){
 	int I = 4;
 	increment(&I);
-	cout << I;
-	cout << endl;
+	cout << I << endl;
 	
 	system("pause");
 	return 0;

@@ -372,3 +372,7 @@
 // console.log(a);
 // a[4] = 'a';
 // console.log(a);
+
+// for (let i = 0; i < 10; i++) {
+//     console.log("hai " + i + " kali");
+// }

@@ -80,14 +80,17 @@
 # else:
 #     print("tidak mungkin")
 
-BanyakKata = int(input("Banyak kata: "))
-PanjangKata = int(input("Panjang kata: "))
-unique = []
-for i in range (BanyakKata):
-    for j in range (PanjangKata):
-        MasukkanKataKe = input("Masukkan kata ke-" + str(i+1) + ": ")
-        if MasukkanKataKe not in unique:
-            unique.append(MasukkanKataKe)
-        else:
-            print("Kata sudah ada")
-            break  
+# BanyakKata = int(input("Banyak kata: "))
+# PanjangKata = int(input("Panjang kata: "))
+# unique = []
+# for i in range (BanyakKata):
+#     for j in range (PanjangKata):
+#         MasukkanKataKe = input("Masukkan kata ke-" + str(i+1) + ": ")
+#         if MasukkanKataKe not in unique:
+#             unique.append(MasukkanKataKe)
+#         else:
+#             print("Kata sudah ada")
+#             break  
+
+halo = [1, "A", 4, "B", 6, "C", 8, "D", 10, "E"]
+print(halo[0])

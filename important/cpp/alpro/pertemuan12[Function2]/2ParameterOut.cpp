@@ -9,8 +9,7 @@ void Jumlah(int A, int B, int *C){
 
 int main(){
 	Jumlah(Nill, Nil2, &Hasil);
-	cout << Hasil;
-	cout << endl;
+	cout << Hasil << endl;
 	
 	system("pause");
 	return 0;

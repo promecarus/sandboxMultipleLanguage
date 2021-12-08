@@ -376,3 +376,20 @@
 // for (let i = 0; i < 10; i++) {
 //     console.log("hai " + i + " kali");
 // }
+
+// function show all fibonacci number sequence
+// function fibonacci(a, k, n) {
+//   for (let i = 0; i < n; i++) {
+//     console.log(a + " ");
+//     if (n >= 2) {
+//       return fibonacci(k, a + k, n - 1);
+//     } else {
+//       return k;
+//     }
+//   }
+// }
+
+// console.log(fibonacci(0, 1, 10));
+
+let a = ["a", 1, "b", 2, "c", 3];
+console.log(a[2]);

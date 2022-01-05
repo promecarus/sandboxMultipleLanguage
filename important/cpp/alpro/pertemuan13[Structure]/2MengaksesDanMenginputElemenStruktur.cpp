@@ -16,11 +16,11 @@ struct student{
 student mhs;
 
 int main(){
-    cout<<"nama : ";
-    cin>>mhs.name;
-    mhs.birthday.day = 15;
-    mhs.birthday.month = 4;
-    mhs.birthday.year = 1997;
+    cout << "Nama : ";
+    cin >> mhs.name;
+    mhs.birthday.day = 18;
+    mhs.birthday.month = 11;
+    mhs.birthday.year = 2002;
     
     cout << mhs.name << endl;
     cout << mhs.birthday.day << '-';

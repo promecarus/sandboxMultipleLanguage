@@ -391,5 +391,32 @@
 
 // console.log(fibonacci(0, 1, 10));
 
-let a = ["a", 1, "b", 2, "c", 3];
-console.log(a[2]);
+// let a = ["a", 1, "b", 2, "c", 3];
+// console.log(a[2]);
+
+// function timeConversion(s) {
+//   let hour = parseInt(s[0] + s[1]);
+//   let minute = s[3] + s[4];
+//   let second = s[6] + s[7];
+//   let ampm = s[8] + s[9];
+//   if (ampm == "PM") {
+//     if (hour != 12) {
+//       hour += 12;
+//     }
+//   } else if (hour == 12) {
+//     hour = "00";
+//   }
+//   return hour + ":" + minute + ":" + second;
+// }
+
+// console.log(timeConversion("01:05:45am"));
+
+const a = (array) => {
+  let hasil = 1;
+  for (let i = 0; i < array.length; i++) {
+    hasil *= array[i];
+  }
+  return hasil;
+};
+
+console.log(a([1, 2, 3, 4, 5]));

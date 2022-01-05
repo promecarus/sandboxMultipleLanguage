@@ -92,5 +92,8 @@
 #             print("Kata sudah ada")
 #             break  
 
-halo = [1, "A", 4, "B", 6, "C", 8, "D", 10, "E"]
-print(halo[0])
+# halo = [1, "A", 4, "B", 6, "C", 8, "D", 10, "E"]
+# print(halo[0])
+
+nama = input("Masukkan nama: ")
+print("Halo", nama)

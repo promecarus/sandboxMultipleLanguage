@@ -1,6 +1,6 @@
 #! /bin/bash
-while : 
-    do 
+while :
+    do
         clear 
         echo "-------------------------------------" 
         echo " Main Menu " 
@@ -22,5 +22,4 @@ while :
             5)  exit 0 ;; 
             *)  echo "Opps!!! Please select choice berween 1 to 5"; echo "Press a key. . ." ; read ;; 
         esac 
-done 
-
+done

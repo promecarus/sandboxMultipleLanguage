@@ -1,1 +1,3 @@
-#!/bin/bash
+#! /bin/bash
+# Buat program yang mematikan dirinya sendiri
+

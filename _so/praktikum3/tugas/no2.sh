@@ -1,7 +1,7 @@
-#!/bin/bash
-# skrip merubah inputan menjadi huruf besar
-#   dan menampilkan hasilnya
-read 
-read -p "Enter first number: " a
-read -p "Enter second number: " b
-echo "Sum of $a and $b is $(("$a" + "$b"))"
+#! /bin/bash
+# Buat skrip untuk merubah input lowercase menjadi uppercase
+ 
+clear
+read -p "Masukkan sebuah kata atau kalimat : " string
+echo -n "Hasil perubahan kata atau kalimat : "
+echo "$string" | tr [a-z] [A-Z]

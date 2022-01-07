@@ -411,12 +411,19 @@
 
 // console.log(timeConversion("01:05:45am"));
 
-const a = (array) => {
-  let hasil = 1;
-  for (let i = 0; i < array.length; i++) {
-    hasil *= array[i];
-  }
-  return hasil;
-};
+// const a = (array) => {
+//   let hasil = 1;
+//   for (let i = 0; i < array.length; i++) {
+//     hasil *= array[i];
+//   }
+//   return hasil;
+// };
 
-console.log(a([1, 2, 3, 4, 5]));
+// console.log(a([1, 2, 3, 4, 5]));
+
+// add two numbers
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(1, 1));

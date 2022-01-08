@@ -3,7 +3,7 @@
 
 while true; do
     clear
-    read -p "Masukkan angka untuk hitungan mundur: " ANGKA
+    read -p "Masukkan angka untuk hitungan mundur mematikan program: " ANGKA
     if [ $ANGKA -lt 1 ]; then
         clear
         echo "Angka yang anda masukkan tidak boleh negatif atau nol, minimal 1"

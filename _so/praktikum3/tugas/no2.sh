@@ -2,6 +2,6 @@
 # Buat skrip untuk merubah input lowercase menjadi uppercase
  
 clear
-read -p "Masukkan sebuah kata atau kalimat : " string
+read -p "Masukkan sebuah kata atau kalimat : " STRING
 echo -n "Hasil perubahan kata atau kalimat : "
-echo "$string" | tr [a-z] [A-Z]
+echo "$STRING" | tr [a-z] [A-Z]

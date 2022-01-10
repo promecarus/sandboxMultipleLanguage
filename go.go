@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+var kata string = "hello saya dari masa depan"
+
 func main() {
-	fmt.Println("hello")
+	kata := "hello saya dari masa lalu"
+	fmt.Println(kata)
 }

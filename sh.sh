@@ -1,26 +1,10 @@
-#! /bin/bash
-while : 
-    do 
-        clear 
-        echo "-------------------------------------" 
-        echo " Main Menu " 
-        echo "-------------------------------------" 
-        echo "[1] Show Todays date/time" 
-        echo "[2] Show files in current directory" 
-        echo "[3] Show calendar" 
-        echo "[4] Start editor to write letters" 
-        echo "[5] Exit/Stop" 
-        echo "=======================" 
-        echo -n "Enter your menu choice [1-5]: " 
-        read yourch 
-        
-        case $yourch in 
-            1)  echo "Today is $(date)";                            echo "Press a key. . ." ; read ;; 
-            2)  echo "Files in $(pwd)";                             echo "Press a key. . ." ; read ;; 
-            3)  cal;                                                echo "Press a key. . ." ; read ;; 
-            4)  vi ;; 
-            5)  exit 0 ;; 
-            *)  echo "Opps!!! Please select choice berween 1 to 5"; echo "Press a key. . ." ; read ;; 
-        esac 
-done 
+#!/bin/bash
 
+# This is a useful function for evaluating expressions. expr & let can only can compute integers.
+
+# Main
+for i in $(seq 1 99); do
+    if [[ $[ $i + 1 ] % 2 -eq 0 ]]; then
+        echo $i >$(tty)
+    fi
+done

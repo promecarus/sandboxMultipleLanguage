@@ -421,9 +421,87 @@
 
 // console.log(a([1, 2, 3, 4, 5]));
 
-// add two numbers
-function add(a, b) {
-  return a + b;
+// // add two numbers
+// function add(a, b) {
+//   return a + b;
+// }
+
+// console.log(add(1, 1));
+
+// // HackerRank mini-max sum
+// function miniMaxSum(arr) {
+//     let max = arr[0],
+//         min = arr[0],
+//         total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (max < arr[i]) {
+//             max = arr[i];
+//         }
+//         if (min > arr[i]) {
+//             min = arr[i];
+//         }
+//         total += arr[i];
+//     }
+//     return [total - max, total - min];
+// }
+
+// console.log(miniMaxSum([1, 2, 3, 4, 5]));
+
+// // HackerRank birthday cake candles
+// function birthdayCakeCandles(candles) {
+//     let max = candles[0],
+//         result = 0;
+//     for (let i = 0; i < candles.length; i++) {
+//         if (max < candles[i]) {
+//             max = candles[i];
+//         }
+//     }
+//     for (let i = 0; i < candles.length; i++) {
+//         if (max == candles[i]) {
+//             result++;
+//         }
+//     }
+//     console.log(result);
+// }
+
+// birthdayCakeCandles([3, 2, 1, 3, 3, 2, 1]);
+
+// // HackerRank breaking the records
+// function breakingRecords(scores) {
+//     let min = scores[0],
+//         max = scores[0],
+//         minCount = 0,
+//         maxCount = 0;
+//     for (let i = 0; i < scores.length; i++) {
+//         if (min > scores[i]) {
+//             min = scores[i];
+//             minCount++;
+//         }
+//         if (max < scores[i]) {
+//             max = scores[i];
+//             maxCount++;
+//         }
+//     }
+//     return [maxCount, minCount];
+// }
+
+// console.log(breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]));
+
+const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["no-extra-semi", "no-dup-keys"],
+};
+function makeList(arr) {
+    // Only change code below this line
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result.push(`<li class="text-warning">${arr[i]}</li>`);
+    }
+    return result;
+    // Only change code above this line
+
+    return failureItems;
 }
 
-console.log(add(1, 1));
+const failuresList = makeList(result.failure);

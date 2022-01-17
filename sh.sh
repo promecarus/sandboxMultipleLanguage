@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# This is a useful function for evaluating expressions. expr & let can only can compute integers.
+# find largest and smallest number in array
 
-# Main
-for i in $(seq 1 99); do
-    if [[ $[ $i + 1 ] % 2 -eq 0 ]]; then
-        echo $i >$(tty)
-    fi
-done
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+read -p "Enter third number: " num3
+

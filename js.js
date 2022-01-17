@@ -487,21 +487,33 @@
 
 // console.log(breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]));
 
-const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped: ["no-extra-semi", "no-dup-keys"],
-};
-function makeList(arr) {
-    // Only change code below this line
-    let result = [];
-    for (let i = 0; i < arr.length; i++) {
-        result.push(`<li class="text-warning">${arr[i]}</li>`);
-    }
-    return result;
-    // Only change code above this line
+// const result = {
+//     success: ["max-length", "no-amd", "prefer-arrow-functions"],
+//     failure: ["no-var", "var-on-top", "linebreak"],
+//     skipped: ["no-extra-semi", "no-dup-keys"],
+// };
+// function makeList(arr) {
+//     // Only change code below this line
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         result.push(`<li class="text-warning">${arr[i]}</li>`);
+//     }
+//     return result;
+//     // Only change code above this line
 
-    return failureItems;
-}
+//     return failureItems;
+// }
 
-const failuresList = makeList(result.failure);
+// const failuresList = makeList(result.failure);
+
+// print the largest and smallest number in the array
+// function findLargestAndSmallest(arr) {
+//     let largest = arr[0],
+//         smallest = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (largest < arr[i]) {
+//             largest = arr[i];
+//         }
+//         if (smallest > arr[i]) {
+//             smallest = arr[i];
+//         }

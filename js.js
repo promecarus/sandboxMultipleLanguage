@@ -517,3 +517,16 @@
 //         if (smallest > arr[i]) {
 //             smallest = arr[i];
 //         }
+
+function kangaroo(x1, v1, x2, v2) {
+    let kangaroo1, kangoroo2;
+    kangaroo1 = x1 + v1 * 4;
+    kangoroo2 = x2 + v2 * 4;
+    if (kangaroo1 == kangoroo2) {
+        console.log("YES");
+    } else {
+        console.log("NO");
+    }
+}
+
+kangaroo(0, 2, 5, 3);

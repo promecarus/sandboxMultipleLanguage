@@ -518,15 +518,40 @@
 //             smallest = arr[i];
 //         }
 
-function kangaroo(x1, v1, x2, v2) {
-    let kangaroo1, kangoroo2;
-    kangaroo1 = x1 + v1 * 4;
-    kangoroo2 = x2 + v2 * 4;
-    if (kangaroo1 == kangoroo2) {
-        console.log("YES");
-    } else {
-        console.log("NO");
+// function kangaroo(x1, v1, x2, v2) {
+//     let kangaroo1, kangoroo2;
+//     kangaroo1 = x1 + v1 * 4;
+//     kangoroo2 = x2 + v2 * 4;
+//     if (kangaroo1 == kangoroo2) {
+//         console.log("YES");
+//     } else {
+//         console.log("NO");
+//     }
+// }
+
+// kangaroo(0, 2, 5, 3);
+
+function palindrome(str) {
+    let newStr = str
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "")
+        .split("");
+
+    while (newStr.length >= 0) {
+        if (newStr.length > 2) {
+            if (newStr[0] === newStr[newStr.length - 1]) {
+                newStr.pop(), newStr.shift();
+            } else {
+                return false;
+            }
+        } else if (newStr.length === 2 && newStr[0] == newStr[1]) {
+            return true;
+        } else if (newStr.length === 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
-kangaroo(0, 2, 5, 3);
+console.log(palindrome("1 eye for of 1 eye."));

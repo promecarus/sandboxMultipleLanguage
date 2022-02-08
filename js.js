@@ -531,27 +531,34 @@
 
 // kangaroo(0, 2, 5, 3);
 
-function palindrome(str) {
-    let newStr = str
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "")
-        .split("");
+// function palindrome(str) {
+//     let newStr = str
+//         .toLowerCase()
+//         .replace(/[^a-z0-9]/g, "")
+//         .split("");
 
-    while (newStr.length >= 0) {
-        if (newStr.length > 2) {
-            if (newStr[0] === newStr[newStr.length - 1]) {
-                newStr.pop(), newStr.shift();
-            } else {
-                return false;
-            }
-        } else if (newStr.length === 2 && newStr[0] == newStr[1]) {
-            return true;
-        } else if (newStr.length === 1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
+//     while (newStr.length >= 0) {
+//         if (newStr.length > 2) {
+//             if (newStr[0] === newStr[newStr.length - 1]) {
+//                 newStr.pop(), newStr.shift();
+//             } else {
+//                 return false;
+//             }
+//         } else if (newStr.length === 2 && newStr[0] == newStr[1]) {
+//             return true;
+//         } else if (newStr.length === 1) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// }
 
-console.log(palindrome("1 eye for of 1 eye."));
+// console.log(palindrome("1 eye for of 1 eye."));
+
+const months = ["1", "3", "4", "6"];
+months.splice(1, 0, "2");
+console.log(months);
+
+months.splice(4, 1, "5");
+console.log(months);

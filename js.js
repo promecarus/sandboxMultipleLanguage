@@ -556,9 +556,57 @@
 
 // console.log(palindrome("1 eye for of 1 eye."));
 
-const months = ["1", "3", "4", "6"];
-months.splice(1, 0, "2");
-console.log(months);
+// const months = ["1", "3", "4", "6"];
+// months.splice(1, 0, "2");
+// console.log(months);
 
-months.splice(4, 1, "5");
-console.log(months);
+// months.splice(4, 1, "5");
+// console.log(months);
+
+// function frontDoorPassword(word) {
+// return [...word][0].toUpperCase().concat(word.slice(1));
+// }
+// console.log(frontDoorPassword("Summer"));
+
+// function setItem(cards, position, replacementCard) {
+// cards.splice(position, 1, replacementCard);
+// return cards;
+// }
+
+// console.log(setItem([1, 2, 3], 0, 7));
+
+// function insertItemAtTop(cards, newCard) {
+//     cards.push(newCard);
+//     return cards;
+// }
+// console.log(insertItemAtTop([1, 2, 3], 7));
+
+// function birdsInWeek(birdsPerDay, week) {
+//     let result = [],
+//         count = 0,
+//         total = 0;
+//     for (let i = 0; i < birdsPerDay.length; i++) {
+//         total += birdsPerDay[i];
+//         count++;
+//         if (count === 7) {
+//             count = 0;
+//             result.push(total);
+//             console.log(result);
+//             total = 0;
+//         }
+//     }
+//     return result[week - 1];
+// }
+// const birdsPerDay = [3, 0, 5, 1, 0, 4, 1, 0, 3, 4, 3, 0, 8, 0];
+// console.log(birdsInWeek(birdsPerDay, 1));
+
+// console.log(0 % 2);
+
+function fixBirdCountLog(birdsPerDay) {
+    for (let i = 0; i < birdsPerDay.length; i++) {
+        if (i % 2 === 0) {
+            birdsPerDay[i] += 1;
+        }
+    }
+    return birdsPerDay;
+}

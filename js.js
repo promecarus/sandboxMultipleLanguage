@@ -602,11 +602,30 @@
 
 // console.log(0 % 2);
 
-function fixBirdCountLog(birdsPerDay) {
-    for (let i = 0; i < birdsPerDay.length; i++) {
-        if (i % 2 === 0) {
-            birdsPerDay[i] += 1;
+// function fixBirdCountLog(birdsPerDay) {
+//     for (let i = 0; i < birdsPerDay.length; i++) {
+//         if (i % 2 === 0) {
+//             birdsPerDay[i] += 1;
+//         }
+//     }
+//     return birdsPerDay;
+// }
+
+// function abbrevName(name) {
+//     let [first, last] = name.split(" ");
+//     return `${first[0]}.${last[0]}`.toUpperCase();
+// }
+// console.log(abbrevName("Sam Harris"));
+
+const isPrime = (num) => {
+    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+        if (num % i === 0) {
+            console.log(i);
+            return false;
         }
     }
-    return birdsPerDay;
-}
+    return num > 1;
+};
+let num = 18;
+console.log(isPrime(num));
+console.log(Math.sqrt(num));

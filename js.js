@@ -617,15 +617,39 @@
 // }
 // console.log(abbrevName("Sam Harris"));
 
-const isPrime = (num) => {
-    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-        if (num % i === 0) {
-            console.log(i);
-            return false;
+// const isPrime = (num) => {
+//     for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+//         if (num % i === 0) {
+//             console.log(i);
+//             return false;
+//         }
+//     }
+//     return num > 1;
+// };
+// let num = 18;
+// console.log(isPrime(num));
+// console.log(Math.sqrt(num));
+
+const rockPaperScissors = (rounds) => {
+    // if (rounds === 0) return [];
+    let throwOptions = [...rounds],
+        solutions = [];
+
+    const combinations = (solution = "") => {
+        if (solution.length === rounds.length) {
+            return solutions.push(solution);
         }
-    }
-    return num > 1;
+        throwOptions.forEach((option) => {
+            combinations(solution + option);
+        });
+    };
+
+    combinations();
+
+    return solutions;
 };
-let num = 18;
-console.log(isPrime(num));
-console.log(Math.sqrt(num));
+
+console.log(rockPaperScissors("rps").length);
+
+let asd = "asdsa";
+console.log([...asd]);

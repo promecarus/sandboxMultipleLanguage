@@ -630,26 +630,28 @@
 // console.log(isPrime(num));
 // console.log(Math.sqrt(num));
 
-const rockPaperScissors = (rounds) => {
-    // if (rounds === 0) return [];
-    let throwOptions = [...rounds],
-        solutions = [];
+// const rockPaperScissors = (rounds) => {
+//     // if (rounds === 0) return [];
+//     let throwOptions = [...rounds],
+//         solutions = [];
 
-    const combinations = (solution = "") => {
-        if (solution.length === rounds.length) {
-            return solutions.push(solution);
-        }
-        throwOptions.forEach((option) => {
-            combinations(solution + option);
-        });
-    };
+//     const combinations = (solution = "") => {
+//         if (solution.length === rounds.length) {
+//             return solutions.push(solution);
+//         }
+//         throwOptions.forEach((option) => {
+//             combinations(solution + option);
+//         });
+//     };
 
-    combinations();
+//     combinations();
 
-    return solutions;
-};
+//     return solutions;
+// };
 
-console.log(rockPaperScissors("rps").length);
+// console.log(rockPaperScissors("rps").length);
 
-let asd = "asdsa";
-console.log([...asd]);
+// let asd = "asdsa";
+// console.log([...asd]);
+
+console.log("hello world");

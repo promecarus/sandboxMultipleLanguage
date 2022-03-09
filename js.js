@@ -655,3 +655,8 @@
 // console.log([...asd]);
 
 console.log("hello world");
+
+const angkaAngka = [10, 2, 8, 3, 5, 7, 9, 4, 6, 1];
+console.log(angkaAngka);
+angkaAngka.sort((a, b) => a - b);
+console.log(angkaAngka);

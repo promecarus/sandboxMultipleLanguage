@@ -1,19 +1,14 @@
 #include <iostream>
+#include <array>
+#include <algorithm>
+
 using namespace std;
 
 int main() {
-	system("CLS");
-
-	for (int i = 0; i < 10; i++) {
-		cout << i << endl;
-	}
-	
-	cout << "\n";
-	for (int i = 0; i < 10; ++i) {
+	array <int, 5> isi = {1, 2, 3, 4, 5};
+	for(int i: isi) {
 		cout << i << endl;
 	}
 
-
-	system("pause");
 	return 0;
 }

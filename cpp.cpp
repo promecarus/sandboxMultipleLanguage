@@ -17,6 +17,12 @@ void animasiKetik (int i, int time, string batas) {
 
 int main() {
 
+	double satu = 91.6001;
+	double dua = 2.50008;
+	cout << satu << "\n";
+	cout << dua << "\n";
+	cout << satu + dua << endl;
+	
 	array <int, 10> angkaAngka = {9, 4, 6, 2, 0, 7, 3, 1, 5, 8};
 	for(int i: angkaAngka) {
 		animasiKetik(i, 100, ";");

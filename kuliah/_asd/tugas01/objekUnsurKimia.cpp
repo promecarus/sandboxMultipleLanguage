@@ -11,13 +11,13 @@ typedef struct {
     string  nuk; // nama unsur kimia
     int     per; // periode
     string  gol; // golongan
-    string  td;  // titik didih
-    string  tl;  // titik lebur
+    double  td;  // titik didih
+    double  tl;  // titik lebur
     string  su;  // sifat umum
 } UnsurKimia;
 
 // constractor
-UnsurKimia initUnsurKimia(double na, double ma, double ion, string sim, string nuk, int per, string gol, string td, string tl, string su) {
+UnsurKimia initUnsurKimia(double na, double ma, double ion, string sim, string nuk, int per, string gol, double td, double tl, string su) {
     UnsurKimia uk;
     uk.na   = na;
     uk.ma   = ma;
@@ -33,7 +33,7 @@ UnsurKimia initUnsurKimia(double na, double ma, double ion, string sim, string n
 }
 
 // mutator
-void ubahUnsurKimia(UnsurKimia *uk, double na, double ma, double ion, string sim, string nuk, int per, string gol, string td, string tl, string su) {
+void ubahUnsurKimia(UnsurKimia *uk, double na, double ma, double ion, string sim, string nuk, int per, string gol, double td, double tl, string su) {
     (*uk).na   = na;
     (*uk).ma   = ma;
     (*uk).ion  = ion;

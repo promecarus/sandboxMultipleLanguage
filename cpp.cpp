@@ -1,38 +1,31 @@
 #include <iostream>
-#include <array>
-#include <algorithm>
 #include <chrono>
 #include <thread>
+#include <cstring>
+// #include <array>
+// #include <algorithm>
 
 using namespace std;
 using namespace chrono;
 using namespace this_thread;
 
-void animasiKetik (int i, int time, string batas) {
-	cout << i;
-	sleep_for(milliseconds(time));
-	cout << batas;
-	sleep_for(milliseconds(time));
+void animasiKetikRepeatitif (const char* kata, const char* batas, int repeat, int time) {
+	for (int i = 0; i < repeat; i++) {
+		for (int j = 0; j < strlen(kata); j++) {
+			cout << kata[j];
+			sleep_for(milliseconds(time));
+		}
+		if(batas != "") {
+			cout << batas;
+			sleep_for(milliseconds(time));
+		}
+	}
+	cout << "\n";
 }
 
 int main() {
-
-	double satu = 91.6001;
-	double dua = 2.50008;
-	cout << satu << "\n";
-	cout << dua << "\n";
-	cout << satu + dua << endl;
+	animasiKetikRepeatitif("ass", "", 10, 50);
 	
-	array <int, 10> angkaAngka = {9, 4, 6, 2, 0, 7, 3, 1, 5, 8};
-	for(int i: angkaAngka) {
-		animasiKetik(i, 100, ";");
-	}
-	cout << "\n";
-	sort(angkaAngka.begin(), angkaAngka.end());
-	for(int i: angkaAngka) {
-		animasiKetik(i, 100, ";");
-	}
-	cout << "\n";
-
+	system("pause");
 	return 0;
 }

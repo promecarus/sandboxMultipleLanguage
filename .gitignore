@@ -1,5 +1,5 @@
 *.exe
 *.txt
 *.class
-# .vscode
-# settings.json
+.vscode
+settings.json

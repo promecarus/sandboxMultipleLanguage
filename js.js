@@ -654,9 +654,19 @@
 // let asd = "asdsa";
 // console.log([...asd]);
 
-console.log("hello world");
+// console.log("hello world");
 
-const angkaAngka = [10, 2, 8, 3, 5, 7, 9, 4, 6, 1];
-console.log(angkaAngka);
-angkaAngka.sort((a, b) => a - b);
-console.log(angkaAngka);
+// const angkaAngka = [10, 2, 8, 3, 5, 7, 9, 4, 6, 1];
+// console.log(angkaAngka);
+// angkaAngka.sort((a, b) => a - b);
+// console.log(angkaAngka);
+
+function numDigits(x) {
+    return (Math.log10((x ^ (x >> 31)) - (x >> 31)) | 0) + 1;
+}
+
+let dua = 2;
+for (let i = 0; i < 65; i++) {
+    console.log(`${dua}\t ${numDigits(dua)}`);
+    dua = dua * 2;
+}

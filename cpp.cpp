@@ -116,7 +116,7 @@ class UnsurKimia {
 
 
 int main() {
-	UnsurKimia atom1 = UnsurKimia(1, 1.0079, 1, "H", "Hydrogen", "Gas", 1, 1, 14.01, 20.28);
+	UnsurKimia atom1(1, 1.0079, 1, "H", "Hydrogen", "Gas", 1, 1, 14.01, 20.28);
 	print("hello world");
 	print(atom1.getProton());
 	print(atom1.getElektron());

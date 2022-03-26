@@ -95,5 +95,12 @@
 # halo = [1, "A", 4, "B", 6, "C", 8, "D", 10, "E"]
 # print(halo[0])
 
-nama = input("Masukkan nama: ")
-print("Halo", nama)
+# nama = input("Masukkan nama: ")
+# print("Halo", nama)
+
+hasil = ""
+isi = input("Masukkan sebuah kata: ")
+while(isi != "stop"):
+    hasil += isi + " "
+    isi = input("Masukkan sebuah kata: ")
+print("Hasil kalimat: " + hasil)

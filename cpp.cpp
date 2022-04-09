@@ -13,12 +13,12 @@ using namespace std;
 
 int main() {
 	int a = 5;
-	double b = 2.0;
-	int c = 2;
+	int counter = 0;
+	for(int i = 0; i < a; i++){
+		// counter++;
+		cout << "Counter " << i + 1 << "= " << ++counter << endl;
+	}
 
-
-	cout << a / b << endl;
-	cout << a / c << endl;
 	system("pause");
 	return 0;
 }

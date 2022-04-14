@@ -142,7 +142,6 @@ int main(){
 	while(pilihan != 9){
 		CetakDoubleLinkedList();
 		cout << "+--------------------------------------------------------------------------------------------------------+" << "\n";
-
 		cout << "| [1] Tambah Depan | [2] Tambah Belakang | [3] Hapus Depan | [4] Hapus Belakang | [5] Cetak | [9] Keluar |" << "\n";
 		cout << "Pilihan: ";
 		cin >> pilihan;

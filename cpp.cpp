@@ -1,5 +1,6 @@
 #include <iostream>
-// #include <string.h>
+#include <iomanip>
+#include <string>
 // #include <typeinfo>
 // #include <chrono>
 // #include <thread>
@@ -11,14 +12,15 @@ using namespace std;
 // using namespace chrono;
 // using namespace this_thread;
 
+
 int main() {
-	int a = 5;
-	int counter = 0;
-	for(int i = 0; i < a; i++){
-		// counter++;
-		cout << "Counter " << i + 1 << "= " << ++counter << endl;
+	string input;
+	cout << "Masukkan input: ";
+	cin >> input;
+	if(input == "-") {
+		cout << "bisa\n";
 	}
 
-	system("pause");
-	return 0;
+	// system("pause");
+	// return 0;
 }

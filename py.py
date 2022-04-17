@@ -98,9 +98,49 @@
 # nama = input("Masukkan nama: ")
 # print("Halo", nama)
 
-hasil = ""
-isi = input("Masukkan sebuah kata: ")
-while(isi != "stop"):
-    hasil += isi + " "
-    isi = input("Masukkan sebuah kata: ")
-print("Hasil kalimat: " + hasil)
+# hasil = ""
+# isi = input("Masukkan sebuah kata: ")
+# while(isi != "stop"):
+#     hasil += isi + " "
+#     isi = input("Masukkan sebuah kata: ")
+# print("Hasil kalimat: " + hasil)
+
+# make class car with attributes: Car name, Car factory, Car type, Car fuel, Car status
+
+# class Car:
+#     def __init__(self, name, factory, type):
+#         self.name = name
+#         self.factory = factory
+#         self.type = type
+#         self.fuel = 100
+#         self.status = "Car on stock!"
+
+#     def info(self):
+#         return "Car name\t: " + self.name + "\nCar factory\t: " + self.factory + "\nCar type\t: " + self.type + "\nCar fuel\t: " + str(self.fuel) + "\nCar status\t: " + self.status + "\n"
+
+#     def test_drive(self):
+#         if self.fuel > 0:
+#             self.fuel -= 10
+#             return "Car is running\n" + "Car fuel: " + str(self.fuel) + "\n"
+#         else:
+#             return "Car is not running\n" + "Car fuel: " + str(self.fuel) + "\n"
+
+#     def sold(self):
+#         self.status = "Car is sold"
+
+# Brio = Car("Brio", "Toyota", "City car")
+# print(Brio.info())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+# print(Brio.test_drive())
+
+# Brio.sold()
+# print(Brio.info())

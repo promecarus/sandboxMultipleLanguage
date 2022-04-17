@@ -117,11 +117,11 @@ void HapusDepan() {
 	if(head == NULL) {
 		cout << "List kosong." << "\n";
 	} else {
-		cout << "Hapus Depan" << "\n";
 		del = head;
 		head = head->next;
 		tail->next = head;
 		delete del;
+		CetakCircularSingleLinkedList();
 	}
 }
 
@@ -129,7 +129,6 @@ void HapusBelakang() {
 	if(head == NULL) {
 		cout << "List kosong." << "\n";
 	} else {
-		cout << "Hapus Belakang" << "\n";
 		del = tail;
 		cur = head;
 		while(cur->next != tail) {
@@ -138,18 +137,19 @@ void HapusBelakang() {
 		tail = cur;
 		tail->next = head;
 		delete del;
+		CetakCircularSingleLinkedList();
 	}
 }
 
 int main() {
 	int pilihan;
 	while(pilihan != 0) {
-		string menu[] = {"[0] Keluar", "[1] Tambah Depan", "[2] Tambah Belakang", "[3] Hapus Depan", "[4] Hapus Belakang", "[5] Cetak"};
-		cout << "\n" << setfill('-') << setw(22) << left << "+-" << "+\n";
+		string menu[] = {"[0] Keluar", "[1] Tambah node di depan", "[2] Tambah node di belakang", "[3] Hapus node di depan", "[4] Hapus node di belakang", "[5] Tampilkan data"};
+		cout << "\n" << setfill('-') << setw(30) << left << "+-" << "+\n";
 		for(int i = 0; i < sizeof(menu)/sizeof(string); i++) {
-			cout << setfill(' ') << "| " << setw(20) << left << menu[i] << "|\n";
+			cout << setfill(' ') << "| " << setw(28) << left << menu[i] << "|\n";
 		}
-		cout << setfill('-') << setw(22) << left << "+-" << "+\n";
+		cout << setfill('-') << setw(30) << left << "+-" << "+\n";
 
 		cout << "Pilihan: ";
 		cin >> pilihan;

@@ -7,7 +7,7 @@
 		<title>Form Biodata</title>
 	</head>
 	<body>
-		<form action="biodata.html" method="">
+		<form action="biodata.html" method="POST">
 			<fieldset>
 				<legend>Form Biodata</legend>
 				<table>
@@ -15,7 +15,7 @@
 					<tr>
 						<td>Nama</td>
 						<td>:</td>
-						<td><input type="text" name="nama" placeholder="Namamu..." /></td>
+						<td><input type="text" name="nama" placeholder="Namamu" /></td>
 					</tr>
 					<!-- NIM -->
 					<tr>
@@ -59,13 +59,13 @@
 					<tr>
 						<td>Email</td>
 						<td>:</td>
-						<td><input type="email" name="email" placeholder="Emailmu..." /></td>
+						<td><input type="email" name="email" placeholder="Email" /></td>
 					</tr>
 					<!-- Tempat Lahir -->
 					<tr>
 						<td>Tempat lahir</td>
 						<td>:</td>
-						<td><input type="text" name="tempat_lahir" placeholder="Tempat lahirmu..." /></td>
+						<td><input type="text" name="tempat_lahir" placeholder="Tempat lahir" /></td>
 					</tr>
 					<!-- Tanggal Lahir -->
 					<tr>
@@ -92,19 +92,19 @@
 					<tr>
 						<td>Perguruan Tinggi</td>
 						<td>:</td>
-						<td><input type="text" name="perguruan_tinggi" placeholder="Perguruan tinggimu..." /></td>
+						<td><input type="text" name="perguruan_tinggi" placeholder="Perguruan tinggi" /></td>
 					</tr>
 					<!-- Jurusan -->
 					<tr>
 						<td>Jurusan</td>
 						<td>:</td>
-						<td><input type="text" name="jurusan" placeholder="Jurusanmu..." /></td>
+						<td><input type="text" name="jurusan" placeholder="Jurusan" /></td>
 					</tr>
 					<!-- Program Studi -->
 					<tr>
 						<td>Program Studi</td>
 						<td>:</td>
-						<td><input type="text" name="program_studi" placeholder="Program studimu..." /></td>
+						<td><input type="text" name="program_studi" placeholder="Program studi" /></td>
 					</tr>
 					<!-- Status Perkawinan -->
 					<tr>
@@ -127,8 +127,7 @@
 						<td>
 							<select name="pekerjaan">
 								<option value="" selected disabled hidden>Pilih di sini</option>
-								<option value="Pelajar">Pelajar</option>
-								<option value="Mahasiswa">Mahasiswa</option>
+								<option value="Pelajar_mahasiswa">Pelajar/Mahasiswa</option>
 								<option value="PNS">PNS</option>
 								<option value="Swasta">Swasta</option>
 								<option value="Wiraswasta">Wiraswasta</option>
@@ -151,13 +150,19 @@
 							</select>
 						</td>
 					</tr>
+					<!-- Foto -->
+					<tr>
+						<td>Foto</td>
+						<td>:</td>
+						<td><input type="file" name="foto" /></td>
+					</tr>
 					<tr>
 						<td><span style="opacity: 0">a</span></td>
 					</tr>
 					<!-- Riwayat Pendidikan -->
 					<tr>
 						<td>Riwayat Pendidikan</td>
-						<td></td>
+						<td>:</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -288,8 +293,12 @@
 						<td>Hobi</td>
 						<td>:</td>
 						<td>
-							<input type="checkbox" value="Berenang" /> Berenang <input type="checkbox" value="Basket" /> Basket <input type="checkbox" value="Bola" /> Bola
+							<input type="checkbox" value="Menabung" /> Menabung <input type="checkbox" value="Berenang" /> Berenang <input type="checkbox" value="Belajar" /> Belajar
+
+							<input type="checkbox" value="Bermain_game" /> Bermain game <input type="checkbox" value="Basket" /> Basket <input type="checkbox" value="Berkebun" /> Berkebun
+
 							<input type="checkbox" value="Futsal" /> Futsal <input type="checkbox" value="Voli" /> Voli <input type="checkbox" value="Sepak Bola" /> Sepak Bola
+
 							<input type="checkbox" value="Sepak Takraw" /> Sepak Takraw <input type="checkbox" value="Tenis Meja" /> Tenis Meja <input type="checkbox" value="Tennis" /> Tennis
 						</td>
 					</tr>
@@ -297,7 +306,7 @@
 					<!-- Srtifikat -->
 					<tr>
 						<td>Sertifikat</td>
-						<td></td>
+						<td>:</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -328,9 +337,9 @@
 						<td></td>
 						<td></td>
 						<td>
-							<a href="./biodata.html">
-								<input type="submit" name="submit" value="Submit" />
-							</a>
+							<!-- <a href="./biodata.html"> -->
+							<input type="submit" name="submit" value="Submit" />
+							<!-- </a> -->
 						</td>
 					</tr>
 				</table>

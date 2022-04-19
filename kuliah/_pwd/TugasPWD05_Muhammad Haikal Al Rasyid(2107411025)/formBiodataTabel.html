@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Biodata</title>
+	</head>
+	<body>
+		<form action="biodata.html" method="">
+			<fieldset>
+				<legend>Form Biodata</legend>
+				<table>
+					<!-- Nama -->
+					<tr>
+						<td>Nama</td>
+						<td>:</td>
+						<td><input type="text" name="nama" placeholder="Namamu..." /></td>
+					</tr>
+					<!-- NIM -->
+					<tr>
+						<td>NIM</td>
+						<td>:</td>
+						<td><input type="text" name="nim" placeholder="210XXXXXXX" /></td>
+					</tr>
+					<!-- Jenis Kelamin -->
+					<tr>
+						<td>Jenis kelamin</td>
+						<td>:</td>
+						<td><input type="radio" name="jenis_kelamin" value="Laki-laki" /> Laki-laki <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan</td>
+					</tr>
+					<!-- Golongan Darah -->
+					<tr>
+						<td>Golongan darah</td>
+						<td>:</td>
+						<td>
+							<select name="golongan_darah">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="AB">AB</option>
+								<option value="O">O</option>
+							</select>
+						</td>
+					</tr>
+					<!-- Alamat -->
+					<tr>
+						<td>Alamat</td>
+						<td>:</td>
+						<td><textarea name="alamat" placeholder="Jl. Alamat No. Alamat"></textarea></td>
+					</tr>
+					<!-- Telepon -->
+					<tr>
+						<td>Telepon</td>
+						<td>:</td>
+						<td><input type="tel" name="telepon" placeholder="08XXXXXXXXXX" /></td>
+					</tr>
+					<!-- Email -->
+					<tr>
+						<td>Email</td>
+						<td>:</td>
+						<td><input type="email" name="email" placeholder="Emailmu..." /></td>
+					</tr>
+					<!-- Tempat Lahir -->
+					<tr>
+						<td>Tempat lahir</td>
+						<td>:</td>
+						<td><input type="text" name="tempat_lahir" placeholder="Tempat lahirmu..." /></td>
+					</tr>
+					<!-- Tanggal Lahir -->
+					<tr>
+						<td>Tanggal lahir</td>
+						<td>:</td>
+						<td><input type="date" name="tanggal_lahir" /></td>
+					</tr>
+					<!-- Agama -->
+					<tr>
+						<td>Agama</td>
+						<td>:</td>
+						<td>
+							<select name="agama">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="Islam">Islam</option>
+								<option value="Kristen">Kristen</option>
+								<option value="Katolik">Katolik</option>
+								<option value="Hindu">Hindu</option>
+								<option value="Budha">Budha</option>
+							</select>
+						</td>
+					</tr>
+					<!-- Perguruan Tinggi -->
+					<tr>
+						<td>Perguruan Tinggi</td>
+						<td>:</td>
+						<td><input type="text" name="perguruan_tinggi" placeholder="Perguruan tinggimu..." /></td>
+					</tr>
+					<!-- Jurusan -->
+					<tr>
+						<td>Jurusan</td>
+						<td>:</td>
+						<td><input type="text" name="jurusan" placeholder="Jurusanmu..." /></td>
+					</tr>
+					<!-- Program Studi -->
+					<tr>
+						<td>Program Studi</td>
+						<td>:</td>
+						<td><input type="text" name="program_studi" placeholder="Program studimu..." /></td>
+					</tr>
+					<!-- Status Perkawinan -->
+					<tr>
+						<td>Status Perkawinan</td>
+						<td>:</td>
+						<td>
+							<select name="status_perkawinan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="Belum Kawin">Belum Kawin</option>
+								<option value="Kawin">Kawin</option>
+								<option value="Cerai Hidup">Cerai Hidup</option>
+								<option value="Cerai Mati">Cerai Mati</option>
+							</select>
+						</td>
+					</tr>
+					<!-- Pekerjaan -->
+					<tr>
+						<td>Pekerjaan</td>
+						<td>:</td>
+						<td>
+							<select name="pekerjaan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="Pelajar">Pelajar</option>
+								<option value="Mahasiswa">Mahasiswa</option>
+								<option value="PNS">PNS</option>
+								<option value="Swasta">Swasta</option>
+								<option value="Wiraswasta">Wiraswasta</option>
+								<option value="Petani">Petani</option>
+								<option value="Buruh">Buruh</option>
+								<option value="Pensiunan">Pensiunan</option>
+								<option value="Lainnya">Lainnya</option>
+							</select>
+						</td>
+					</tr>
+					<!-- Kewarganegaraan -->
+					<tr>
+						<td>Kewarganegaraan</td>
+						<td>:</td>
+						<td>
+							<select name="kewarganegaraan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="WNI">WNI</option>
+								<option value="WNA">WNA</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><span style="opacity: 0">a</span></td>
+					</tr>
+					<!-- Riwayat Pendidikan -->
+					<tr>
+						<td>Riwayat Pendidikan</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="riwayat_pendidikan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="None">None</option>
+								<option value="SD">SD</option>
+								<option value="SMP">SMP</option>
+								<option value="SMA">SMA</option>
+								<option value="D1">D1</option>
+								<option value="D2">D2</option>
+								<option value="D3">D3</option>
+								<option value="D4">D4</option>
+								<option value="S1">S1</option>
+								<option value="S2">S2</option>
+								<option value="S3">S3</option>
+							</select>
+						</td>
+						<td>:</td>
+						<td><input type="text" name="nama" placeholder="Nama sekolah" /></td>
+					</tr>
+					<tr>
+						<td>Tahun masuk</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_masuk" placeholder="Tahun masuk" /></td>
+					</tr>
+					<tr>
+						<td>Tahun lulus</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_lulus" placeholder="Tahun lulus" /></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="riwayat_pendidikan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="None">None</option>
+								<option value="SD">SD</option>
+								<option value="SMP">SMP</option>
+								<option value="SMA">SMA</option>
+								<option value="D1">D1</option>
+								<option value="D2">D2</option>
+								<option value="D3">D3</option>
+								<option value="D4">D4</option>
+								<option value="S1">S1</option>
+								<option value="S2">S2</option>
+								<option value="S3">S3</option>
+							</select>
+						</td>
+						<td>:</td>
+						<td><input type="text" name="nama" placeholder="Nama sekolah" /></td>
+					</tr>
+					<tr>
+						<td>Tahun masuk</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_masuk" placeholder="Tahun masuk" /></td>
+					</tr>
+					<tr>
+						<td>Tahun lulus</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_lulus" placeholder="Tahun lulus" /></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="riwayat_pendidikan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="None">None</option>
+								<option value="SD">SD</option>
+								<option value="SMP">SMP</option>
+								<option value="SMA">SMA</option>
+								<option value="D1">D1</option>
+								<option value="D2">D2</option>
+								<option value="D3">D3</option>
+								<option value="D4">D4</option>
+								<option value="S1">S1</option>
+								<option value="S2">S2</option>
+								<option value="S3">S3</option>
+							</select>
+						</td>
+						<td>:</td>
+						<td><input type="text" name="nama" placeholder="Nama sekolah" /></td>
+					</tr>
+					<tr>
+						<td>Tahun masuk</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_masuk" placeholder="Tahun masuk" /></td>
+					</tr>
+					<tr>
+						<td>Tahun lulus</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_lulus" placeholder="Tahun lulus" /></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="riwayat_pendidikan">
+								<option value="" selected disabled hidden>Pilih di sini</option>
+								<option value="None">None</option>
+								<option value="SD">SD</option>
+								<option value="SMP">SMP</option>
+								<option value="SMA">SMA</option>
+								<option value="D1">D1</option>
+								<option value="D2">D2</option>
+								<option value="D3">D3</option>
+								<option value="D4">D4</option>
+								<option value="S1">S1</option>
+								<option value="S2">S2</option>
+								<option value="S3">S3</option>
+							</select>
+						</td>
+						<td>:</td>
+						<td><input type="text" name="nama" placeholder="Nama sekolah" /></td>
+					</tr>
+					<tr>
+						<td>Tahun masuk</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_masuk" placeholder="Tahun masuk" /></td>
+					</tr>
+					<tr>
+						<td>Tahun lulus</td>
+						<td>:</td>
+						<td><input type="text" name="tahun_lulus" placeholder="Tahun lulus" /></td>
+					</tr>
+					<tr>
+						<td><span style="opacity: 0">a</span></td>
+					</tr>
+					<!-- Hobi -->
+					<tr>
+						<td>Hobi</td>
+						<td>:</td>
+						<td>
+							<input type="checkbox" value="Berenang" /> Berenang <input type="checkbox" value="Basket" /> Basket <input type="checkbox" value="Bola" /> Bola
+							<input type="checkbox" value="Futsal" /> Futsal <input type="checkbox" value="Voli" /> Voli <input type="checkbox" value="Sepak Bola" /> Sepak Bola
+							<input type="checkbox" value="Sepak Takraw" /> Sepak Takraw <input type="checkbox" value="Tenis Meja" /> Tenis Meja <input type="checkbox" value="Tennis" /> Tennis
+						</td>
+					</tr>
+					<td><span style="opacity: 0">a</span></td>
+					<!-- Srtifikat -->
+					<tr>
+						<td>Sertifikat</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Link sertifikat 1</td>
+						<td>:</td>
+						<td><input type="url" name="link_sertifikat" placeholder="Link sertifikat" /></td>
+					</tr>
+					<tr>
+						<td>Link sertifikat 2</td>
+						<td>:</td>
+						<td><input type="url" name="link_sertifikat" placeholder="Link sertifikat" /></td>
+					</tr>
+					<tr>
+						<td>Link sertifikat 3</td>
+						<td>:</td>
+						<td><input type="url" name="link_sertifikat" placeholder="Link sertifikat" /></td>
+					</tr>
+					<tr>
+						<td>Link sertifikat 4</td>
+						<td>:</td>
+						<td><input type="url" name="link_sertifikat" placeholder="Link sertifikat" /></td>
+					</tr>
+					<!-- Submit -->
+					<tr>
+						<td><span style="opacity: 0">a</span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<a href="./biodata.html">
+								<input type="submit" name="submit" value="Submit" />
+							</a>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

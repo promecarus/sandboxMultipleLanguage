@@ -2,14 +2,23 @@
 using namespace std;
 
 int maksProd = 5;
+struct produk {
+    string namaProduk;
+    int harga;
 
-int countProd(){
-    if(head == NULL){
+    produk *next;
+    produk *prev;
+};
+
+produk *head, *tail, *cur, *nodeBaru, *del;
+
+int countProd() {
+    if (head == NULL) {
         return 0;
     } else {
         int jumlah = 0;
         cur = head;
-        while(cur != NULL){
+        while (cur != NULL) {
             jumlah++;
             cur = cur->next;
         }
@@ -17,11 +26,11 @@ int countProd(){
     }
 }
 
-void pushProd(string namaProduk){
-    if(isFull()){
+void pushProd(string namaProduk) {
+    if (isFull()) {
         cout << "Stack penuh" << endl;
     } else {
-        if(isEmpty()){
+        if (isEmpty()) {
             head = new node();
             tail = head;
         } else {
@@ -33,25 +42,23 @@ void pushProd(string namaProduk){
     }
 }
 
-bool isFull(){
-    if(countProd() == maksProd){
+bool isFull() {
+    if (countProd() == maksProd) {
         return true;
     } else {
         return false;
     }
 }
 
-bool isEmpty(){
-    if(countProd() == 0){
+bool isEmpty() {
+    if (countProd() == 0) {
         return true;
     } else {
         return false;
     }
 }
 
-int main(){
-	
-	
-	system("pause");
-	return 0;
+int main() {
+    system("pause");
+    return 0;
 }

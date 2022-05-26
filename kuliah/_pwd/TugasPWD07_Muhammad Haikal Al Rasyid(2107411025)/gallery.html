@@ -2,10 +2,47 @@
 <html>
 	<head>
 		<title>Gallery</title>
+		<style>
+			figure img {
+				width: 80%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+				border: 3px solid black;
+			}
+			#gambarGunungPertama {
+				border-radius: 20px 40px 60px 80px;
+			}
+			#gambarGunungKedua {
+				border-radius: 20px 40px 60px;
+			}
+			#gambarPantaiPertama {
+				border-radius: 100px 50px;
+			
+			}
+			#gambarPantaiKedua {
+				border-top-left-radius: 50px;
+				border-top-right-radius: 50px;
+				border-bottom-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+			}
+			#gambarHutanPertama {
+				border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
+				border-image-slice: 12;
+				border-image-width: 12px;
+				border-image-outset: 10px;
+				border-image-repeat: round;
+				border-style: solid;
+			}
+			#gambarHutanKedua {
+				border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png") 12 stretch;
+				border-image-outset: 10px;
+				border-image-width: 12px;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Judul atas -->
-		<h1 align="center" style="padding: 15px; margin: 0">Gallery</h1>
+		<h1 class="judulAtas" align="center" style="padding: 15px; margin: 0">Gallery</h1>
 
 		<!-- Opsi menu -->
 		<hr style="padding: 0; margin: 0" />
@@ -22,7 +59,7 @@
 			<h1 style="background-image: url(./img/2828921.jpg); background-size: contain; color: antiquewhite; padding: 5px">Gambar Gunung</h1>
 			<!-- Gambar gunung pertama -->
 			<figure>
-				<img src="./img/ben-emrick-ZFB9S3LNcVg-unsplash.jpg" alt="Gambar gunung 1" style="width: 80%; border-radius: 10px" />
+				<img id="gambarGunungPertama" src="./img/ben-emrick-ZFB9S3LNcVg-unsplash.jpg" alt="Gambar gunung 1" />
 				<figcaption>
 					Photo by
 					<a href="https://unsplash.com/@benemrick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" title="Profile pemotret gambar gunung satu"
@@ -36,7 +73,7 @@
 			</figure>
 			<!-- Gambar gunung kedua -->
 			<figure>
-				<img src="./img/ratana-limnararat-VotaA-0tHKs-unsplash.jpg" alt="Gambar gunung 2" style="width: 80%; border-radius: 10px" />
+				<img id="gambarGunungKedua" src="./img/ratana-limnararat-VotaA-0tHKs-unsplash.jpg" alt="Gambar gunung 2" />
 				<figcaption>
 					Photo by
 					<a href="https://unsplash.com/@nengratana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" title="Profile pemotret gambar gunung satu"
@@ -53,7 +90,7 @@
 			<h1 style="background-image: url(./img/145.jpg); background-size: contain; color: black; padding: 5px">Gambar Pantai</h1>
 			<!-- Gambar pantai pertama -->
 			<figure>
-				<img src="./img/harry-holder-NbPJ8HM-w8c-unsplash.jpg" alt="Gambar pantai 1" style="width: 80%; border: 2.5px solid cornflowerblue" />
+				<img id="gambarPantaiPertama" src="./img/harry-holder-NbPJ8HM-w8c-unsplash.jpg" alt="Gambar pantai 1" />
 				<figcaption>
 					Photo by <a href="https://unsplash.com/@harryholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harry Holder</a> on
 					<a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -61,7 +98,7 @@
 			</figure>
 			<!-- Gambar pantai kedua -->
 			<figure>
-				<img src="./img/kees-streefkerk-Adl90-aXYwA-unsplash.jpg" alt="Gambar pantai 2" style="width: 80%; border: 2.5px solid cornflowerblue" />
+				<img id="gambarPantaiKedua" src="./img/kees-streefkerk-Adl90-aXYwA-unsplash.jpg" alt="Gambar pantai 2" />
 				<figcaption>
 					Photo by <a href="https://unsplash.com/@kees_streefkerk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kees Streefkerk</a> on
 					<a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -81,28 +118,7 @@
 			</h1>
 			<!-- Gambar hutan pertama -->
 			<figure>
-				<picture>
-					<source media="(min-width: 850px)" srcset="./img/michael-benz--IZ2sgQKIhM-unsplash(resize700x467).jpg" alt="Gambar hutan 1" usemap="#gambarHutan1resize700x467" />
-					<map name="gambarHutan1resize700x467">
-						<area shape="rect" coords="5,261,695,452" title="Gambar hutan 1" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 650px)" srcset="./img/michael-benz--IZ2sgQKIhM-unsplash(resize500x333).jpg" alt="Gambar hutan 1" usemap="#gambarHutan1resize500x333" />
-					<map name="gambarHutan1resize500x333">
-						<area shape="rect" coords="10,199,481,313" title="Gambar hutan 1" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 450px)" srcset="./img/michael-benz--IZ2sgQKIhM-unsplash(resize300x200).jpg" alt="Gambar hutan 1" usemap="#gambarHutan1resize300x200" />
-					<map name="gambarHutan1resize300x200">
-						<area shape="rect" coords="0, 0, 300, 200" title="Gambar hutan 1" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 250px)" srcset="./img/michael-benz--IZ2sgQKIhM-unsplash(resize100x67).jpg" alt="Gambar hutan 1" usemap="#gambarHutan1resize100x67" />
-					<map name="gambarHutan1resize100x67">
-						<area shape="rect" coords="0, 0, 100, 67" title="Gambar hutan 1" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<img src="./img/michael-benz--IZ2sgQKIhM-unsplash(resize50x33).jpg" alt="Gambar hutan 1" usemap="#gambarHutan1resize50x33" />
-					<map name="gambarHutan1resize50x33">
-						<area shape="rect" coords="0, 0, 50, 33" title="Gambar hutan 1" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-				</picture>
+				<img id="gambarHutanPertama" src="./img/michael-benz--IZ2sgQKIhM-unsplash.jpg" alt="Gambar hutan 1" />
 				<figcaption>
 					Photo by <a href="https://unsplash.com/@michaelbenz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Benz</a> on
 					<a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -110,28 +126,7 @@
 			</figure>
 			<!-- Gambar hutan kedua -->
 			<figure>
-				<picture>
-					<source media="(min-width: 850px)" srcset="./img/federico-bottos-Z3NceSeZqgI-unsplash(resize700x1050).jpg" alt="Gambar hutan 2" usemap="#gambarHutan2resize700x1050" />
-					<map name="gambarHutan2resize700x1050">
-						<area shape="rect" coords="0,0,700,1050" title="Gambar hutan 2" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 650px)" srcset="./img/federico-bottos-Z3NceSeZqgI-unsplash(resize500x750).jpg" alt="Gambar hutan 2" usemap="#gambarHutan2resize500x750" />
-					<map name="gambarHutan2resize500x750">
-						<area shape="rect" coords="0,0,500,750" title="Gambar hutan 2" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 450px)" srcset="./img/federico-bottos-Z3NceSeZqgI-unsplash(resize300x450).jpg" alt="Gambar hutan 2" usemap="#gambarHutan2resize300x450" />
-					<map name="gambarHutan2resize300x450">
-						<area shape="rect" coords="0,0,300,450" title="Gambar hutan 2" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<source media="(min-width: 250px)" srcset="./img/federico-bottos-Z3NceSeZqgI-unsplash(resize100x150).jpg" alt="Gambar hutan 2" usemap="#gambarHutan2resize100x150" />
-					<map name="gambarHutan2resize100x150">
-						<area shape="rect" coords="0,0,100,150" title="Gambar hutan 2" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-					<img src="./img/federico-bottos-Z3NceSeZqgI-unsplash(resize50x75).jpg" alt="Gambar hutan 2" usemap="#gambarHutan2resize50x75" />
-					<map name="gambarHutan2resize50x75">
-						<area shape="rect" coords="0,0,50,75" title="Gambar hutan 2" href="https://en.wikipedia.org/wiki/Pine" target="_blank" />
-					</map>
-				</picture>
+				<img id="gambarHutanKedua" src="./img/federico-bottos-Z3NceSeZqgI-unsplash.jpg" alt="Gambar hutan 2" />
 				<figcaption>
 					Photo by <a href="https://unsplash.com/@landscapeplaces?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Federico Bottos</a> on
 					<a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

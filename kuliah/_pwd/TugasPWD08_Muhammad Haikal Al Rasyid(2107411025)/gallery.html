@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery</title>
+		<style>
+			figure img {
+				width: 80%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+				border: 3px solid black;
+			}
+			#gambarGunungPertama {
+				border-radius: 20px 40px 60px 80px;
+			}
+			#gambarGunungKedua {
+				border-radius: 20px 40px 60px;
+			}
+			#gambarPantaiPertama {
+				border-radius: 100px 50px;
+			
+			}
+			#gambarPantaiKedua {
+				border-top-left-radius: 50px;
+				border-top-right-radius: 50px;
+				border-bottom-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+			}
+			#gambarHutanPertama {
+				border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
+				border-image-slice: 12;
+				border-image-width: 12px;
+				border-image-outset: 10px;
+				border-image-repeat: round;
+				border-style: solid;
+			}
+			#gambarHutanKedua {
+				border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png") 12 stretch;
+				border-image-outset: 10px;
+				border-image-width: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Judul atas -->
+		<h1 class="judulAtas" align="center" style="padding: 15px; margin: 0">Gallery</h1>
+
+		<!-- Opsi menu -->
+		<hr style="padding: 0; margin: 0" />
+		<p align="center" style="padding: 15px; margin: 0; background-color: antiquewhite">
+			<a href="./index.html" title="Menuju home">Home</a> | <a href="./contact.html" title="Menuju contact">Contact</a> | <a href="./about.html" title="Menuju about">About</a> |
+			<a href="./news.html" title="Menuju news">News</a> |
+			<a href="./gallery.html" title="Menuju gallery">Gallery</a>
+		</p>
+		<hr style="padding: 0; margin: 0" />
+
+		<!-- Isi -->
+		<div align="center" style="margin: 0">
+			<!-- Gambar Gunung -->
+			<h1 style="background-image: url(./img/2828921.jpg); background-size: contain; color: antiquewhite; padding: 5px">Gambar Gunung</h1>
+			<!-- Gambar gunung pertama -->
+			<figure>
+				<img id="gambarGunungPertama" src="./img/ben-emrick-ZFB9S3LNcVg-unsplash.jpg" alt="Gambar gunung 1" />
+				<figcaption>
+					Photo by
+					<a href="https://unsplash.com/@benemrick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" title="Profile pemotret gambar gunung satu"
+						>Ben Emrick</a
+					>
+					on
+					<a href="https://unsplash.com/@promecarus/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" target="Link menuju list liked by me"
+						>Unsplash</a
+					>
+				</figcaption>
+			</figure>
+			<!-- Gambar gunung kedua -->
+			<figure>
+				<img id="gambarGunungKedua" src="./img/ratana-limnararat-VotaA-0tHKs-unsplash.jpg" alt="Gambar gunung 2" />
+				<figcaption>
+					Photo by
+					<a href="https://unsplash.com/@nengratana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" title="Profile pemotret gambar gunung satu"
+						>Ratana Limnararat</a
+					>
+					on
+					<a href="https://unsplash.com/@promecarus/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" target="Link menuju list liked by me"
+						>Unsplash</a
+					>
+				</figcaption>
+			</figure>
+
+			<!-- Gambar Pantai -->
+			<h1 style="background-image: url(./img/145.jpg); background-size: contain; color: black; padding: 5px">Gambar Pantai</h1>
+			<!-- Gambar pantai pertama -->
+			<figure>
+				<img id="gambarPantaiPertama" src="./img/harry-holder-NbPJ8HM-w8c-unsplash.jpg" alt="Gambar pantai 1" />
+				<figcaption>
+					Photo by <a href="https://unsplash.com/@harryholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harry Holder</a> on
+					<a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+				</figcaption>
+			</figure>
+			<!-- Gambar pantai kedua -->
+			<figure>
+				<img id="gambarPantaiKedua" src="./img/kees-streefkerk-Adl90-aXYwA-unsplash.jpg" alt="Gambar pantai 2" />
+				<figcaption>
+					Photo by <a href="https://unsplash.com/@kees_streefkerk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kees Streefkerk</a> on
+					<a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+				</figcaption>
+			</figure>
+
+			<!-- Gambar Hutan -->
+			<h1
+				style="
+					background-image: url(https://static.vecteezy.com/system/resources/previews/000/170/885/large_2x/pattern-gum-tree-vector.jpg);
+					background-size: contain;
+					color: snow;
+					padding: 5px;
+				"
+			>
+				Gambar Hutan
+			</h1>
+			<!-- Gambar hutan pertama -->
+			<figure>
+				<img id="gambarHutanPertama" src="./img/michael-benz--IZ2sgQKIhM-unsplash.jpg" alt="Gambar hutan 1" />
+				<figcaption>
+					Photo by <a href="https://unsplash.com/@michaelbenz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Benz</a> on
+					<a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+				</figcaption>
+			</figure>
+			<!-- Gambar hutan kedua -->
+			<figure>
+				<img id="gambarHutanKedua" src="./img/federico-bottos-Z3NceSeZqgI-unsplash.jpg" alt="Gambar hutan 2" />
+				<figcaption>
+					Photo by <a href="https://unsplash.com/@landscapeplaces?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Federico Bottos</a> on
+					<a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+				</figcaption>
+			</figure>
+		</div>
+		<hr style="padding: 0; margin: 0" />
+
+		<!-- Footer -->
+		<div align="center" style="padding: 15px; margin: 0">Copyright &copy; 2022 by Muhammad Haikal Al Rasyid</div>
+	</body>
+</html>

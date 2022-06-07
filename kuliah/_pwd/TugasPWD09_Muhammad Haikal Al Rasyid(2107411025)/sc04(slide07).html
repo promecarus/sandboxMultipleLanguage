@@ -1,4 +1,4 @@
-<!-- flex-shrink (slide 12) -->
+<!-- justify-content (slide 7) -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,38 +6,26 @@
 		<style>
 			#container {
 				display: flex;
-				background-color: #0662cd;
+				justify-content: flex-start;
 				padding: 15px;
+				background-color: #0662cd;
 			}
 			.box {
 				background-color: #78ff07;
-				padding: 5px 40px;
+				padding: 10px 20px;
 				font-size: 20px;
 				border-radius: 3px;
 				border: 1px solid black;
-				width: 30%;
-			}
-			.box1 {
-				flex-shrink: 1;
-			}
-			.box2 {
-				flex-shrink: 2;
-			}
-			.box3 {
-				flex-shrink: 1;
-			}
-			.box4 {
-				flex-shrink: 1;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Belajar CSS</h1>
+		<h2>justify-content (slide 7)</h2>
 		<div id="container">
 			<div class="box box1">1</div>
 			<div class="box box2">2</div>
 			<div class="box box3">3</div>
-			<div class="box box4">4</div>
 		</div>
 	</body>
 </html>

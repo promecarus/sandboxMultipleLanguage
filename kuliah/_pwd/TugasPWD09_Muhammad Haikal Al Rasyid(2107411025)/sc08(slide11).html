@@ -1,4 +1,4 @@
-<!-- justify-content (slide 7) -->
+<!-- flex-grow (slide 11) -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,21 +6,31 @@
 		<style>
 			#container {
 				display: flex;
-				justify-content: flex-start;
-				padding: 15px;
+				flex-wrap: wrap;
 				background-color: #0662cd;
+				padding: 15px;
 			}
 			.box {
 				background-color: #78ff07;
-				padding: 10px 20px;
+				padding: 5px 40px;
 				font-size: 20px;
 				border-radius: 3px;
 				border: 1px solid black;
+			}
+			.box1 {
+				flex-grow: 1;
+			}
+			.box2 {
+				flex-grow: 2;
+			}
+			.box3 {
+				flex-grow: 1;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Belajar CSS</h1>
+		<h2>flex-grow (slide 11)</h2>
 		<div id="container">
 			<div class="box box1">1</div>
 			<div class="box box2">2</div>

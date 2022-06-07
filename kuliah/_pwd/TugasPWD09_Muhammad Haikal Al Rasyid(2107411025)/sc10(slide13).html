@@ -1,4 +1,4 @@
-<!-- flex shorthand (slide 14) -->
+<!-- flex-basis (slide 13) -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,7 +6,7 @@
 		<style>
 			#container {
 				display: flex;
-				flex-flow: wrap column;
+				flex-wrap: wrap;
 				background-color: #0662cd;
 				padding: 15px;
 			}
@@ -16,12 +16,13 @@
 				font-size: 20px;
 				border-radius: 3px;
 				border: 1px solid black;
-				flex: 0 0 150px;
+				flex-basis: 120px;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Belajar CSS</h1>
+		<h2>flex-basis (slide 13)</h2>
 		<div id="container">
 			<div class="box box1">1</div>
 			<div class="box box2">2</div>

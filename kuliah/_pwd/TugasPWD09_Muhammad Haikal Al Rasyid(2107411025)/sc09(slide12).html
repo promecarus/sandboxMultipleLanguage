@@ -1,4 +1,4 @@
-<!-- order (slide 10) -->
+<!-- flex-shrink (slide 12) -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,7 +6,6 @@
 		<style>
 			#container {
 				display: flex;
-				flex-wrap: wrap;
 				background-color: #0662cd;
 				padding: 15px;
 			}
@@ -16,32 +15,30 @@
 				font-size: 20px;
 				border-radius: 3px;
 				border: 1px solid black;
+				width: 30%;
 			}
 			.box1 {
-				order: 3;
+				flex-shrink: 1;
 			}
 			.box2 {
-				order: 5;
+				flex-shrink: 2;
 			}
 			.box3 {
-				order: 4;
+				flex-shrink: 1;
 			}
 			.box4 {
-				order: 1;
-			}
-			.box5 {
-				order: 2;
+				flex-shrink: 1;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Belajar CSS</h1>
+		<h2>flex-shrink (slide 12)</h2>
 		<div id="container">
 			<div class="box box1">1</div>
 			<div class="box box2">2</div>
 			<div class="box box3">3</div>
 			<div class="box box4">4</div>
-			<div class="box box5">5</div>
 		</div>
 	</body>
 </html>

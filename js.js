@@ -661,12 +661,16 @@
 // angkaAngka.sort((a, b) => a - b);
 // console.log(angkaAngka);
 
-function numDigits(x) {
-    return (Math.log10((x ^ (x >> 31)) - (x >> 31)) | 0) + 1;
-}
+// function numDigits(x) {
+//     return (Math.log10((x ^ (x >> 31)) - (x >> 31)) | 0) + 1;
+// }
 
-let dua = 2;
-for (let i = 0; i < 65; i++) {
-    console.log(`${dua}\t ${numDigits(dua)}`);
-    dua = dua * 2;
-}
+// let dua = 2;
+// for (let i = 0; i < 65; i++) {
+//     console.log(`${dua}\t ${numDigits(dua)}`);
+//     dua = dua * 2;
+// }
+
+// console.log("hello")
+
+document.write("Kode apa hayo");

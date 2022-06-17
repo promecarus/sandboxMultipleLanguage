@@ -1,1 +1,5 @@
-document.write("<h1>Hello World</h1>");
+let judul = "Selamat Datang di Website Saya";
+
+// document.write(`<h1>${judul}</h1>`);
+// document.write(`<h1>${judul}</h1>`);
+// document.write(`<h1>${judul}</h1>`);

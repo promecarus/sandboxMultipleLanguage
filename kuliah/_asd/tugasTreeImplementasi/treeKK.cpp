@@ -154,7 +154,7 @@ void postOrder(Node *node = root) {
 
 void deleteTree(Node *node) {
     if (root == NULL) {
-        cout << "Tree belm ada!" << endl;
+        cout << "Tree belum ada!" << endl;
     } else {
         if (node != NULL) {
             if (node != root) {
@@ -249,20 +249,22 @@ void pilih(Node *node[99]) {
 
     switch (pilihan) {
         case 1:
+            // update
             system("cls");
             tampilkanNode(node);
-            cout << "Masukan node berapa yang ingin diganti :";
+            cout << "Masukkan node berapa yang ingin diganti :";
             cin >> nodes;
-            cout << "Masukan label baru :";
+            cout << "Masukkan label baru :";
             cin >> label;
             update(label, node[nodes]);
             system("pause");
             system("cls");
             break;
         case 2:
+            // retrieve
             system("cls");
             tampilkanNode(node);
-            cout << "Masukan node berapa yang ingin diretrieve :";
+            cout << "Masukkan node berapa yang ingin diretrieve :";
             cin >> nodes;
             retrieve(node[nodes]);
             system("pause");
@@ -270,6 +272,7 @@ void pilih(Node *node[99]) {
             break;
 
         case 3:
+            // find
             system("cls");
             tampilkanNode(node);
             cout << "Masukan node berapa yang ingin dicari :";

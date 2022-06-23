@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Operator Logika</title>
+	</head>
+	<body>
+		<script>
+			var aku = 20,
+				b = 19,
+				benar = aku > b,
+				salah = aku < b, 
+                hasil;
+
+			// operator logika and (&&)
+            hasil = benar && salah;
+            document.write(`${benar} && ${salah} = ${hasil}</br>`);
+
+            // operator logika or (||)
+            hasil = benar || salah;
+            document.write(`${benar} || ${salah} = ${hasil}</br>`);
+
+            // operator logika not (!)
+            hasil = !benar;
+            document.write(`!${benar} = ${hasil}</br>`);
+		</script>
+	</body>
+</html>

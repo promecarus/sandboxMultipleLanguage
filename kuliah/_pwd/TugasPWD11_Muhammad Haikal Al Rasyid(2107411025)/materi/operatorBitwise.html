@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Operator Bitwise</title>
+	</head>
+	<body>
+		<script>
+			var x = 4,
+				y = 3,
+				hasil;
+
+			// operator bitwise AND (&)
+			hasil = x & y;
+            document.write(`${x} & ${y} = ${hasil}</br>`);
+
+            // operator bitwise OR (|)
+            hasil = x | y;
+            document.write(`${x} | ${y} = ${hasil}</br>`);
+
+            // operator bitwise XOR (^)
+            hasil = x ^ y;
+            document.write(`${x} ^ ${y} = ${hasil}</br>`);
+
+            // operator bitwise NOT (~)
+            hasil = ~x;
+            document.write(`~${x} = ${hasil}</br>`);
+
+            // operator bitwise left shift (<<)
+            hasil = x << y;
+            document.write(`${x} << ${y} = ${hasil}</br>`);
+
+            // operator bitwise right shift (>>)
+            hasil = x >> y;
+            document.write(`${x} >> ${y} = ${hasil}</br>`);
+
+            // operator bitwise right shift unsigned (>>>)
+            hasil = x >>> y;
+            document.write(`${x} >>> ${y} = ${hasil}</br>`);
+		</script>
+	</body>
+</html>

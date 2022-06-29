@@ -1,55 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock, Paper, Scissors</title>
 	</head>
-
 	<body>
 		<script>
-			var wins = 0;
-			var ties = 0;
-			var losses = 0;
+			var menang = 0,
+				kalah = 0,
+				seri = 0,
+				opsi = ["Rock", "Paper", "Scissors"];
 
-			var gameOptions = ["R", "P", "S"];
+			function game() {
+				do {
+					var playerChoice = prompt("Pilih:\n[R] - Rock (default)\n[P] - Paper\n[S] - Scissors"),
+						playerChoiceTemp = playerChoice[0].toLowerCase() == "p" ? "p" : playerChoice[0].toLowerCase() == "s" ? "s" : "r",
+						index = Math.floor(Math.random() * opsi.length),
+						realPlayerChoice = playerChoiceTemp == "p" ? "Paper" : playerChoiceTemp == "s" ? "Scissors" : "Rock",
+						realComputerChoice = opsi[index],
+						computerChoiceTemp = realComputerChoice[0].toLowerCase();
 
-			var playGame = (function () {
-				var playerChoice = window.prompt("Pick R, P, or S:");
+					console.log(`realPlayerChoice: ${realPlayerChoice}`);
+					console.log(`realComputerChoice: ${realComputerChoice}`);
+					console.log(`playerChoiceTemp: ${playerChoiceTemp}`);
+					console.log(`computerChoiceTemp: ${computerChoiceTemp}`);
 
-				if (!playerChoice) {
-					return;
-				}
+					if (playerChoiceTemp == computerChoiceTemp) {
+						seri++;
+						alert(`Seri, sama-sama memilih ${realPlayerChoice}.`);
+					} else if (
+						(playerChoiceTemp == "r" && computerChoiceTemp == "p") ||
+						(playerChoiceTemp == "p" && computerChoiceTemp == "s") ||
+						(playerChoiceTemp == "s" && computerChoiceTemp == "r")
+					) {
+						kalah++;
+						alert(`Kalah, kamu memilih ${realPlayerChoice} sedangkan komputer memilih ${realComputerChoice}.`);
+					} else {
+						menang++;
+						alert(`Menang, kamu memilih ${realPlayerChoice} sedangkan komputer memilih ${realComputerChoice}.`);
+					}
 
-				playerChoice = playerChoice.toLowerCase();
+					alert(`Skor sementara:\nMenang: ${menang}\nKalah: ${kalah}\nSeri: ${seri}`);
+				} while (confirm("Bermain lagi?"));
+				alert(`Skor akhir:\nMenang: ${menang}\nKalah: ${kalah}\nSeri: ${seri}`);
+				alert(`Terima kasih telah bermain`);
+			}
 
-				var index = Math.floor(Math.random() * gameOptions.length);
-				console.log(index);
-				var computerChoice = gameOptions[index];
-				console.log(computerChoice);
-
-				window.alert("The computer picked " + computerChoice);
-
-				if (playerChoice === computerChoice) {
-					ties++;
-					window.alert("It's a tie! Try again.");
-				} else if ((playerChoice === "R" && computerChoice === "S") || (playerChoice === "P" && computerChoice === "R") || (playerChoice === "S" && computerChoice === "P")) {
-					wins++;
-					window.alert("Congrats! You won $$");
-				} else {
-					losses++;
-					window.alert("Sorry! You lost :( ");
-				}
-
-				window.alert("Scoreboard:\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties);
-
-				var replay = window.confirm("Would You Like To Play Again?");
-
-				if (replay) {
-					playGame();
-				}
-			})();
+			game();
 		</script>
-		<h1>Thanks for playing!</h1>
 	</body>
 </html>

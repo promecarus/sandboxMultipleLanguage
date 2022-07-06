@@ -1,1 +1,115 @@
-(x(y(q(p,m)),r(t,u(n),w),s(z)))
+```
+Kata depan atau disebut juga preposisi:
+    di
+    ke
+    dari
+    pada
+    dalam
+    yaitu
+    kepada
+    daripada
+    untuk
+    bagi
+    ala
+    bak
+    tentang
+    mengenai
+    sebab
+    secara
+    terhadap
+    di
+    ke
+    dari
+    dalam
+    atas
+    oleh
+    kepada
+    terhadap
+    akan
+    dengan
+    tentang
+    sampai
+
+Konjungsi atau disebut juga kata penghubung: 
+    dan
+    serta
+    atau
+    tapi
+    tetapi
+    namun
+    melainkan
+    padahal
+    sedangkan
+    yang
+    agar
+    supaya
+    biar
+    biarpun
+    jika
+    kalau
+    jikalau
+    asal(kan)
+    bila
+    manakala
+    sejak
+    semenjak
+    sedari
+    sewaktu
+    tatkala
+    ketika
+    sementara
+    begitu
+    seraya
+    selagi
+    selama
+    sambil
+    demi
+    setelah
+    sesudah
+    sebelum 
+    sehabis
+    selesai
+    seusai
+    hingga
+    sampai
+    andaikan
+    seandainya
+    umpamanya
+    sekiranya
+    biar(pun)
+    walau(pun)
+    sekalipun
+    sungguh(pun)
+    kendati(pun)
+    seakan-akan
+    seolah-olah
+    sebagaimana
+    seperti
+    sebagai
+    laksana
+    ibarat
+    daripada
+    alih-alih
+    sebab
+    karena
+    oleh karena
+    oleh sebab
+    sehingga
+    sampai 
+    maka(nya) 
+
+Interjeksi atau disebut juga kata seruan: 
+    dong
+    sih
+    wow
+    yuk 
+    lho 
+
+Artikula atau disebut juga kata sandang: 
+    para
+    si
+    sih
+
+Serta partikel lain seperti: 
+    pun 
+    per

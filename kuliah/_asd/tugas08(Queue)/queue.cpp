@@ -8,29 +8,44 @@ int front = 0, back = 0;
 string antrianOrder[maksimal];
 
 // is full
-bool isFull() { return (back == maksimal); }
+bool isFull()
+{
+    return (back == maksimal);
+}
 
 // is empty
-bool isEmpty() { return (back == 0); }
+bool isEmpty()
+{
+    return (back == 0);
+}
 
 // enqueue
-void enqueue(string data) {
-    if (isFull()) {
+void enqueue(string data)
+{
+    if (isFull())
+    {
         cout << "Antrian penuh!"
              << "\n";
-    } else {
+    }
+    else
+    {
         antrianOrder[back] = data;
         back++;
     }
 }
 
 // dequeue
-void dequeue() {
-    if (isEmpty()) {
+void dequeue()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong!"
              << "\n";
-    } else {
-        for (int i = 0; i < maksimal - 1; i++) {
+    }
+    else
+    {
+        for (int i = 0; i < maksimal - 1; i++)
+        {
             antrianOrder[i] = antrianOrder[i + 1];
         }
         antrianOrder[back - 1] = "---";
@@ -39,16 +54,24 @@ void dequeue() {
 }
 
 // count
-int count() { return back; }
+int count()
+{
+    return back;
+}
 
 // display
-void display() {
-    if (isEmpty()) {
+void display()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong!"
              << "\n";
-    } else {
+    }
+    else
+    {
         cout << "Data Antrian Order\n";
-        for (int i = 0; i < maksimal; i++) {
+        for (int i = 0; i < maksimal; i++)
+        {
             cout << "antrian ke-" << i + 1 << ": " << antrianOrder[i] << "\n";
         }
     }
@@ -56,12 +79,17 @@ void display() {
     cout << "========================================================\n";
 }
 // destroy
-void destroy() {
-    if (isEmpty()) {
+void destroy()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong!"
              << "\n";
-    } else {
-        for (int i = 0; i < maksimal; i++) {
+    }
+    else
+    {
+        for (int i = 0; i < maksimal; i++)
+        {
             antrianOrder[i] = "";
             front = 0;
             back = front;
@@ -69,7 +97,8 @@ void destroy() {
     }
 }
 
-int main() {
+int main()
+{
     enqueue("Paket Hemat 1");
     display();
 

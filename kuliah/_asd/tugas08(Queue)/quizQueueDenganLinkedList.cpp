@@ -3,8 +3,7 @@ using namespace std;
 
 int countOrder = 0, totalPemasukan = 0;
 // deklarasi queue dengan linked list
-struct antrianOrder
-{
+struct antrianOrder {
     int idOrder, jumlahOrder, hargaPerOrder;
     string namaMenu;
 
@@ -15,18 +14,13 @@ int maks = 5;
 antrianOrder *head, *tail, *nodeBaru, *cur, *del;
 
 // count
-int count()
-{
-    if (head == NULL)
-    {
+int count() {
+    if (head == NULL) {
         return 0;
-    }
-    else
-    {
+    } else {
         int jumlah = 0;
         cur = head;
-        while (cur != NULL)
-        {
+        while (cur != NULL) {
             jumlah++;
             cur = cur->next;
         }
@@ -35,29 +29,18 @@ int count()
 }
 
 // is full
-bool isFull()
-{
-    return (count() == maks);
-}
+bool isFull() { return (count() == maks); }
 
 // is empty
-bool isEmpty()
-{
-    return (count() == 0);
-}
+bool isEmpty() { return (count() == 0); }
 
 // enqueue
-void enqueue(string namaMenu, int jumlahOrder, int hargaPerOrder)
-{
-    if (isFull())
-    {
+void enqueue(string namaMenu, int jumlahOrder, int hargaPerOrder) {
+    if (isFull()) {
         cout << "Antrian penuh!" << endl;
-    }
-    else
-    {
+    } else {
         countOrder++;
-        if (isEmpty())
-        {
+        if (isEmpty()) {
             head = new antrianOrder;
             head->idOrder = countOrder;
             head->namaMenu = namaMenu;
@@ -66,9 +49,7 @@ void enqueue(string namaMenu, int jumlahOrder, int hargaPerOrder)
             head->next = NULL;
             tail = head;
             totalPemasukan += countOrder * hargaPerOrder;
-        }
-        else
-        {
+        } else {
             nodeBaru = new antrianOrder;
             nodeBaru->idOrder = countOrder;
             nodeBaru->namaMenu = namaMenu;
@@ -83,37 +64,32 @@ void enqueue(string namaMenu, int jumlahOrder, int hargaPerOrder)
 }
 
 // display
-void display()
-{
-    if (isEmpty())
-    {
+void display() {
+    if (isEmpty()) {
         cout << "Antrian kosong!\n";
-    }
-    else
-    {
+    } else {
         cout << "Data Antrian Order\n";
         cur = head;
-        while (cur != NULL)
-        {
-            cout << "No. Order " << cur->idOrder << " - " << cur->namaMenu << ", sebanyak " << cur->jumlahOrder << ", dengan harga Rp" << cur->hargaPerOrder << ". Total: Rp" << cur->jumlahOrder * cur->hargaPerOrder << endl;
+        while (cur != NULL) {
+            cout << "No. Order " << cur->idOrder << " - " << cur->namaMenu
+                 << ", sebanyak " << cur->jumlahOrder << ", dengan harga Rp"
+                 << cur->hargaPerOrder << ". Total: Rp"
+                 << cur->jumlahOrder * cur->hargaPerOrder << endl;
             cur = cur->next;
         }
     }
     cout << "\nJumlah Antrian Sekarang: " << count() << endl;
     cout << "\nTotal Order\t: " << countOrder << endl;
     cout << "Total Pemasukan\t: Rp" << totalPemasukan << endl;
-    cout << "---------------------------------------------------------------------------\n";
+    cout << "------------------------------------------------------------------"
+            "---------\n";
 }
 
 // dequeue
-void dequeue()
-{
-    if (isEmpty())
-    {
+void dequeue() {
+    if (isEmpty()) {
         cout << "Antrian kosong!\n";
-    }
-    else
-    {
+    } else {
         del = head;
         head = head->next;
         del->next = NULL;
@@ -122,17 +98,12 @@ void dequeue()
 }
 
 // destroy
-void destroy()
-{
-    if (isEmpty())
-    {
+void destroy() {
+    if (isEmpty()) {
         cout << "Antrian kosong!\n";
-    }
-    else
-    {
+    } else {
         cur = head;
-        while (cur != NULL)
-        {
+        while (cur != NULL) {
             del = cur;
             cur = cur->next;
             del->next = NULL;
@@ -143,8 +114,7 @@ void destroy()
     }
 }
 
-int main()
-{
+int main() {
     enqueue("Nasi Goreng", 1, 12000);
     enqueue("Nasi Uduk", 8, 17000);
     enqueue("Nasi Lemak", 6, 11000);

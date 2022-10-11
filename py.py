@@ -29,7 +29,7 @@
 # print(a+a+a)
 
 # dict = {
-#     "aku": "haikal", 
+#     "aku": "haikal",
 # "umur":"19"
 # }
 
@@ -90,7 +90,7 @@
 #             unique.append(MasukkanKataKe)
 #         else:
 #             print("Kata sudah ada")
-#             break  
+#             break
 
 # halo = [1, "A", 4, "B", 6, "C", 8, "D", 10, "E"]
 # print(halo[0])
@@ -144,3 +144,6 @@
 
 # Brio.sold()
 # print(Brio.info())
+
+for i in range(1, 10 + 1):
+    print(i)
